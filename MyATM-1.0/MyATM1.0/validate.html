@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-Up/Login Form</title>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/stylee.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="loader"></div>
+
+  <div class="form">
+<div id="signup">   
+          <h1>Validate Your Email</h1>
+          <div class="field-wrap">
+            <label>
+              Check Email For OTP<span class="req">*</span>
+            </label>
+            <input id="otp" required autocomplete="off"/>
+          </div>
+          <button id="validateBTN" class="button button-block"/>Validate</button>
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/validate.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

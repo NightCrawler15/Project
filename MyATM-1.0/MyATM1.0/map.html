@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>MyATM</title>
+</head>
+<body>
+	<main class="cd-main-content">
+	<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+ <!-- selected option on mobile -->
+					</li> 
+					<li class="abc"><h4>Search</h4></li>
+					<li class="filter"><input type="search" id="searchLOC" placeholder="Location..."></li>
+					<li id="logoutBTN" class="filter"><a data-type="all">Logout</a></li>
+
+
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div>
+		<div class="cd-filter" id="sidebar">
+			<form>
+				<div class="cd-filter-block">
+					<h4 id="adetails">ATM Details</h4>
+					<p id="details"></p>
+				</div>
+				<div class="cd-filter-block">
+					<h4 id="sdetails">Status Details</h4>
+					<p id="status"></p>
+				</div>
+				<div class="cd-filter-block">				
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<button class="button button-block" onclick="return false" id="update">Update</button>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				<div class="cd-filter-block" id="stat">
+						<h4>ATM Status</h4>
+
+						<ul class="cd-filter-content cd-filters list">
+							<li>
+								<input class="filter" data-filter=".status1" type="radio" name="radioButton1" id="status1" checked>
+								<label class="radio-label" for="status1">Working</label>
+							</li>
+
+							<li>
+								<input class="filter" data-filter=".status2" type="radio" name="radioButton1" id="status2">
+								<label class="radio-label" for="status2">Not Working</label>
+							</li>
+						</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block" id="curr">
+						<h4>Currency Notes</h4>
+
+						<ul class="cd-filter-content cd-filters list">
+							<li>
+								<input class="filter" data-filter=".check1" type="checkbox" name="checkBox" id="checkbox1" checked>
+				    			<label class="checkbox-label" for="checkbox1">Rs 100</label>
+							</li>
+
+							<li>
+								<input class="filter" data-filter=".check2" type="checkbox" name="checkBox" id="checkbox2">
+								<label class="checkbox-label" for="checkbox2">Rs 500</label>
+							</li>
+
+							<li>
+								<input class="filter" data-filter=".check3" type="checkbox" name="checkBox" id="checkbox3">
+								<label class="checkbox-label" for="checkbox3">Rs 2000</label>
+							</li>
+						</ul> <!-- cd-filter-content -->
+					</div> <!-- cd-filter-block -->
+                 
+                 <div class="cd-filter-block" id="que">
+					<h4>Queue Status</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">Short</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">Medium</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">Long</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				<div class="cd-filter-block" id="sub">				
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<button id="submit" class="button button-block" onclick="return false"/>Submit</button>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+			<a class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+		<a  class="cd-filter-trigger"></a>
+		<div class="map-inner-content full-map">
+    <div class="contact-map map-block" id="map-canvas"></div>
+      <div class="addresses-block">
+        
+      </div>
+      </div>
+      <!-- side -->
+   
+</div>
+	</main> <!-- cd-main-content -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquey.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDMC0Ulni1yczBUX7UpvjEZyNhToTXZDCs&amp;sensor=false&amp;language=en"></script>
+  <script src="/maps.js"></script>    
+  <script src="js/mains.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
