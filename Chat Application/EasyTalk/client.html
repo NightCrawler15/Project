@@ -1,0 +1,50 @@
+`<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Easytalk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="signup page">
+      <div class="formS">
+        <ul class="input">
+          <li>
+            <h1 class="titleS">Username</h1>
+            <input class="usernameInput00" id="username1" type="text" maxlength="14" />
+          </li>
+          <li>
+            <h1 class="titleS">Password</h1>
+            <input class="usernameInput10" id="password1" type="password" maxlength="14" />
+          </li>
+          <li>
+            <h1 class="titleS">Name</h1>
+            <input class="usernameInput20" id="name1" type="text" maxlength="20" />
+          </li> 
+        </ul>
+      </div>
+    </li>
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <aside class="button">
+        <input type="button" class="signup" value="SignUP">
+      </aside>
+      <div class="form">
+        <h1 class="title">Username</h3>
+        <input class="usernameInput" id="username" type="text" maxlength="14" />
+        <h1 class="title">Password</h3>
+        <input class="usernameInput1" id="password" type="password" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
