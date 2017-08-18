@@ -1,0 +1,3 @@
+Accuracy of RandomForest on test file is 0.649070632
+Accuracy of NB on test file is 0.572490706
+Accuracy of KNN on test file is 0.664278472
