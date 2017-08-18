@@ -1,0 +1,11 @@
+The C version was adapted[ citation needed ] from Kernighan's 1972 A Tutorial Introduction to the Language B , [2] where the first known version of the program is found in an example used to illustrate external variables:
+
+While small test programs existed since the development of programmable computers , the tradition of using the phrase "Hello world!" as a test message was influenced by an example program in the seminal book The C Programming Language [ citation needed ].
+
+The example program from that book prints "hello, world" (without capital letters or exclamation mark), and was inherited[ citation needed ] from a 1974 Bell Laboratories internal memorandum by Brian Kernighan , Programming in C: A Tutorial, [1] which contains the first known version:
+
+Some languages are forced to implement different forms, such as "HELLO WORLD!", on systems that support only capital letters, while many "hello world" programs in esoteric languages print out a slightly modified string.
+
+Languages otherwise capable of Hello World (Assembly, C, VHDL ) may also be used in embedded systems , where text output is either difficult (requiring additional components or communication with another computer) or nonexistent.
+
+
